@@ -1,102 +1,80 @@
 # Food-Delivery-ETA-Prediction-Analysis-Visualization-and-Modeling
 
-```markdown
-# Food Delivery Estimated Time of Arrival (ETA) Prediction: Analysis, Visualization, and Modeling
+This repository provides an end-to-end data science project focused on predicting the **Estimated Time of Arrival (ETA)** for food deliveries. It covers the entire pipeline from in-depth exploratory data analysis (EDA) and feature engineering to building and evaluating a predictive regression model.
 
-## 📚 Overview
-
-This repository contains a complete pipeline for analyzing and predicting **Estimated Time of Arrival (ETA)** in food delivery using real-world data. It features thorough exploratory data analysis (EDA), advanced visualizations, and regression modeling—all organized for reproducibility and clarity.
-
----
-
-## 🚀 Dataset
-
-- **Source:** [Food Delivery Dataset on Kaggle](https://www.kaggle.com/datasets/gauravmalik26/food-delivery-dataset)
-- **Note:** The dataset is not distributed here due to licensing reasons.  
-  Please download it directly from Kaggle and place the files in the `/data` folder as described below.
-
----
-
-## 📂 Project Structure
-
-```
-Food_Delivery_Analysis/
-│
-├── data/                  # Place your raw and processed datasets here
-│   ├── train.csv
-│   ├── test.csv
-│   └── Sample_Submission.csv
-│
-├── notebooks/             # All Jupyter notebook analyses
-│   ├── 01_deeper_eda.ipynb           # In-depth EDA
-│   ├── 02_delivery_time_analysis.ipynb   # Stats & visualizations
-│   ├── 03_modeling.ipynb             # Model training, eval, explainability
-│
-└── README.md              # Project documentation (this file)
-```
-
----
+-----
 
 ## 💡 Key Features
 
-- **EDA:** Inspection of data structure, missing values, categorical/numerical feature analysis.
-- **Advanced Visualization:** Histograms, boxplots, distribution plots, categorical comparisons, geospatial insights.
-- **Feature Engineering:** Route distance calculation from coordinates, temporal features, categorical encoding.
-- **Predictive Modeling:** Regression modeling (e.g., Random Forest), error reporting (RMSE, MAE, R²).
-- **Modularity:** Each analysis step is contained in a dedicated notebook for workflow clarity.
+  * **Comprehensive EDA:** Deep dives into data distributions, missing values, and analysis of categorical and numerical features.
+  * **Advanced Visualizations:** Geospatial mapping of delivery routes, statistical plots, and interactive charts to uncover insights.
+  * **Robust Feature Engineering:** Creation of new features like haversine distance from coordinates, extraction of temporal data (hour, day of the week), and intelligent encoding of categorical variables.
+  * **Predictive Modeling:** Implementation of a Random Forest Regressor to predict delivery times with detailed performance evaluation using metrics like **RMSE**, **MAE**, and **$R^2$**.
+  * **Modular & Reproducible:** The entire workflow is organized into separate Jupyter notebooks for clarity and ease of reproduction.
 
----
+-----
 
-## ⚡️ Quick Start
+## 🛠️ Technology Stack
 
-1. **Clone this repository:**
-    ```
-    git clone https://github.com//Food_Delivery_Analysis.git
-    cd Food_Delivery_Analysis
-    ```
+  * **Data Manipulation & Analysis:** `pandas`, `numpy`
+  * **Data Visualization:** `matplotlib`, `seaborn`, `plotly`
+  * **Geospatial Calculations:** `geopy`
+  * **Machine Learning:** `scikit-learn`
+  * **Model Explainability:** `shap`
+  * **Model Serialization:** `joblib`
 
-2. **Download the dataset:**  
-    - Visit the [Kaggle dataset page](https://www.kaggle.com/datasets/gauravmalik26/food-delivery-dataset)
-    - Download `train.csv`, `test.csv`, and `Sample_Submission.csv`
-    - Place files in `data/`:
-      ```
-      Food_Delivery_Analysis/data/train.csv
-      Food_Delivery_Analysis/data/test.csv
-      Food_Delivery_Analysis/data/Sample_Submission.csv
-      ```
+-----
 
-3. **(Optional)** Install required packages:
-    ```
-    pip install pandas numpy matplotlib seaborn scikit-learn geopy plotly shap joblib
-    ```
+## ⚡️ Getting Started
 
-4. **Run the notebooks:**
-    - Open Jupyter Lab/Notebook, go to `/notebooks`
-    - Start with `01_deeper_eda.ipynb` for data exploration
-    - Use `02_delivery_time_analysis.ipynb` for advanced statistical analysis and visualizations
-    - Use `03_modeling.ipynb` for model building, validation, and results
+Follow these steps to set up the project locally.
 
----
+### 1\. Clone the Repository
 
-## 📊 Results & Outputs
-
-- Visualizations and summary statistics are provided inline in notebooks.
-
----
-
-## ⚠️ Licensing & Dataset Usage
-
-- **Dataset:** Not redistributed here. Please download from the official Kaggle link above.
-- **Code:** Provided for educational and research use—choose or modify OSS license as needed.
-
----
-
-## 🙏 Credits
-
-- [Original Kaggle food delivery dataset](https://www.kaggle.com/datasets/gauravmalik26/food-delivery-dataset)
-- Open-source contributors from the Python, scikit-learn, pandas, and data science communities.
-
----
-
-*Questions or suggestions? Open an issue or pull request!*
+```bash
+git clone https://github.com/your-username/Food_Delivery_Analysis.git
+cd Food_Delivery_Analysis
 ```
+
+### 2\. Download the Dataset
+
+This project uses the [Food Delivery Dataset from Kaggle](https://www.kaggle.com/datasets/gauravmalik26/food-delivery-dataset)
+
+1.  Visit the [Kaggle dataset page](https://www.kaggle.com/datasets/gauravmalik26/food-delivery-dataset).
+2.  Download `train.csv`, `test.csv`, and `Sample_Submission.csv`.
+3.  Place the downloaded files into the `dataset/` directory.
+
+### 3\. Install Dependencies
+
+Install all the required Python packages using pip:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn geopy plotly 
+```
+
+### 4\. Run the Analysis
+
+The project is organized into three main notebooks. It's recommended to run them in order:
+
+  * **`01_deeper_eda.ipynb`:** Start here for initial data inspection and exploratory analysis.
+  * **`02_delivery_time_analysis.ipynb`:** Dive into feature engineering and advanced visualizations.
+  * **`03_modeling.ipynb`:** Build, train, and evaluate the prediction model.
+
+-----
+
+## 📊 Notebook Workflow & Outputs
+
+Each notebook is self-contained and includes all necessary code, explanations, and visualizations.
+
+  * **Notebook 01 (`deeper_eda`)** focuses on understanding the raw data's structure and identifying patterns.
+  * **Notebook 02 (`delivery_time_analysis`)** cleans the data, engineers critical features like route distance, and creates insightful plots.
+  * **Notebook 03 (`modeling`)** contains the complete machine learning pipeline, from data preparation to model evaluation and interpretation of the results.
+
+All outputs, including charts and performance metrics, are generated and displayed inline within the Jupyter notebooks.
+
+-----
+
+## 🙏 Acknowledgments
+
+  * The project relies on the excellent [Food Delivery Dataset](https://www.kaggle.com/datasets/gauravmalik26/food-delivery-dataset) shared by Gaurav Malik on Kaggle.
+  * A big thank you to the open-source community for developing the powerful data science libraries used in this analysis.

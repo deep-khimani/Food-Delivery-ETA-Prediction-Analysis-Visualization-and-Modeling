@@ -1,4 +1,4 @@
-# Food-Delivery-ETA-Prediction-Analysis-Visualization-and-Modeling
+# Food Delivery ETA Prediction: Analysis Visualization and Modeling
 
 This repository provides an end-to-end data science project focused on predicting the **Estimated Time of Arrival (ETA)** for food deliveries. It covers the entire pipeline from in-depth exploratory data analysis (EDA) and feature engineering to building and evaluating a predictive regression model.
 

@@ -20,8 +20,6 @@ This repository provides an end-to-end data science project focused on predictin
   * **Data Visualization:** `matplotlib`, `seaborn`, `plotly`
   * **Geospatial Calculations:** `geopy`
   * **Machine Learning:** `scikit-learn`
-  * **Model Explainability:** `shap`
-  * **Model Serialization:** `joblib`
 
 -----
 

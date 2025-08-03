@@ -32,7 +32,7 @@ Follow these steps to set up the project locally.
 ### 1\. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Food_Delivery_Analysis.git
+git clone https://github.com/deep-khimani/Food-Delivery-ETA-Prediction-Analysis-Visualization-and-Modeling.git
 cd Food_Delivery_Analysis
 ```
 

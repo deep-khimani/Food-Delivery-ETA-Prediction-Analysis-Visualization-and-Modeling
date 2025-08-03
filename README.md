@@ -33,7 +33,7 @@ Follow these steps to set up the project locally.
 
 ```bash
 git clone https://github.com/deep-khimani/Food-Delivery-ETA-Prediction-Analysis-Visualization-and-Modeling.git
-cd Food_Delivery_Analysis
+cd "Food Delivery Analysis"
 ```
 
 ### 2\. Download the Dataset
